@@ -22,35 +22,39 @@
             border: 3px solid #000000;
             border-radius: 5px;
             box-shadow: 2px 2px 1px 0px #000000;
-            background-color:#ffffff;
         }
            
         .date {
             font-family: monospace;
             font-size: 2.5em;
             line-height: 1.2;
+            background-color:#ffffff;
         }
 
         .greet {
             font-size: 1.7em;
             margin-top: 20px;
+            background-color:#ffffff;
         }
 
         .clock {
             font-family: monospace;
             font-size: 2.5em;
             line-height: 1.2;
+            background-color:#ffffff;
         }
 
         .time {
             display: inline-block;
             min-width: 20px;
             line-height: 1.2;
+            background-color:#ffffff;
         }
 
         .colon {
             font-size: 1em;
             display: inline-block;
+            background-color:#ffffff;
         }
     </style>
 </head>
@@ -74,7 +78,9 @@
 function dispalyGreetings(today){
         hrs = today.getHours();
         name=""
-        if (hrs < 12)
+        if (hrs < 5)
+            greet = "早く寝なよ！夜更かしは体に良くないよ！";
+        else if (hrs >= 5 && hrs <= 12)
             greet = "おはよう！もうすぐお昼になりますよ〜 ";
         else if (hrs >= 12 && hrs <= 17)
             greet = "がんばって！もうすぐ夜になるよ！";
